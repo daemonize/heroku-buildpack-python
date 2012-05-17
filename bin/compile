@@ -108,6 +108,9 @@ rm -rf $CACHE_DIR
 # ### The Cache
 mkdir -p $CACHE_DIR
 
+ # Purge .heroku
+rm -rf .heroku
+
 # Create set-aside `.heroku` folder.
 mkdir -p .heroku
 
