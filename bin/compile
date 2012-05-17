@@ -102,6 +102,9 @@ if [ ! -f requirements.txt ]; then
   echo "-e ." > requirements.txt
 fi
 
+# Purge Cache
+rm -rf $CACHE_DIR
+
 # ### The Cache
 mkdir -p $CACHE_DIR
 
